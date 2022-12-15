@@ -1,16 +1,19 @@
-﻿#include <iostream>
+﻿//Подключенные библиотеки
+#include <iostream>
 #include <cmath>
 
+//Глобальная переменная и пространство имён
 using namespace std;
 int sum = 0;
 
+//Матрица значений
 int a[4][4]{
 {1, 1, 3, 2},
 {2, 1, 1, 3},
 {1, 1, 3, 3},
 {2, 3, 1, 1} };
 
-
+//Элементы меню
 int menu()
 {
     cout << endl;
@@ -24,6 +27,8 @@ int menu()
     cin >> m;
     return m;
 }
+
+//Структура значений
 struct naznach {
     int sum1;
     int sum2;
@@ -31,7 +36,7 @@ struct naznach {
     int sum4;
 };
 
-
+//Вывод матрицы
 int show()
 {
     for (int i = 0; i < 4; i++)
@@ -171,7 +176,7 @@ int work_left_up()
     cout << sum4 << endl;
     return(sum4);
 }
-
+//Вывод ответа
 int answer(int sum1, int sum2, int  sum3, int sum4)
 {
     int sum = 0;
@@ -183,6 +188,7 @@ int answer(int sum1, int sum2, int  sum3, int sum4)
     return(0);
 }
 
+//Управление программой
 int main()
 {
     setlocale(LC_ALL, "rus");
